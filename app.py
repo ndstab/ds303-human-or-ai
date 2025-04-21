@@ -138,7 +138,7 @@ st.markdown("""
 # Load model and vocab
 @st.cache_resource
 def load_all():
-    model = load_model("model/lstm_ai_human_classifier.keras")
+    model = load_model("model/lstm_ai_human_classifier.h5")
     with open("model/word2idx.pkl", "rb") as f:
         word2idx = pickle.load(f)
     return model, word2idx
